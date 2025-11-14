@@ -1,0 +1,333 @@
+body{
+    background-color: #D3D3D3;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-top: 100px;
+}
+
+*{
+    font-family: "微軟正黑體";
+    box-sizing: border-box;
+    scroll-padding-top: 60px;
+}
+
+.myself{
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 40px;
+    border-radius: 100px;
+    padding: 10px; 
+    border: 4px solid #007B8A;
+    margin-bottom: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.little-title{
+    background-color: #99E6FF;
+    border-radius: 13px;
+    width: 40%;
+    padding-left: 80px;
+    margin-left: 5px;
+}
+
+.photo-introduction{
+    border-radius: 20px;
+    background-color: #FFFFFF; 
+    padding: 20px;
+    display: table;
+    width: calc(100% - 350px);
+    border-collapse: separate;
+    box-sizing: border-box;
+    margin: 0 175px;
+    margin-bottom: 70px;
+}
+
+aside.photo-cell1{
+    display: table-cell;
+    width: 30%; 
+    vertical-align: top;
+    text-align: center;
+}
+
+.introduction{
+    background-color: white;
+    display: table-cell;
+    width: 70%; 
+    box-sizing: border-box; 
+    padding: 5px 30px 5px 30px;
+    vertical-align: middle;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+.my-photo{
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto; 
+    margin-top: 50px;
+}
+
+.slogan{
+    border-radius: 20px;
+    background-color: #FFFFFF; 
+    padding: 20px;
+    margin: 0 175px;
+    margin-bottom: 70px;
+}
+
+.slogana{
+    text-align: center;
+    font-style: italic;
+}
+
+.skills{
+    border-radius: 20px;
+    background-color: #FFFFFF; 
+    padding: 20px;
+    margin: 0 175px;
+    margin-bottom: 70px;
+}
+
+.skill-rings-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.circle1, .circle2, .circle3, .circle4{
+    height: 180px;
+    width: 180px;
+    position: relative;
+    display: flex;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    transform: rotate(-90deg);
+}
+
+.c1, .c2{
+    fill: none; 
+    stroke-width: 20; 
+    animation-timing-function: linear; 
+    animation-fill-mode: forwards;
+}
+
+.text{ 
+    position: absolute; text-align: center; 
+}
+
+.text h2{ 
+    margin: 0; font-size: 1.2rem; color: #000; 
+}
+
+.text p{ 
+    margin: 0; font-size: 1rem; font-weight: bold; color: #000; 
+}
+
+
+.circle1 .c1, .circle2 .c1, .circle3 .c1,.circle4 .c1{
+    stroke: #ceffe3; 
+} 
+
+.circle1 .c2{
+    stroke: #28a745;
+    stroke-dasharray: 408.4; 
+    animation: progress1 2s forwards;
+}
+
+@keyframes progress1{
+    from { stroke-dashoffset: 408.4; }
+    to { stroke-dashoffset: 142.94; } 
+}
+
+.circle2 .c2{
+    stroke: #28a745;
+    stroke-dasharray: 377.0; 
+    animation: progress2 2s forwards;
+}
+
+@keyframes progress2{
+    from { stroke-dashoffset: 377.0; }
+    to { stroke-dashoffset: 150.8; } 
+}
+
+.circle3 .c2{
+    stroke: #28a745;
+    stroke-dasharray: 377.0; 
+    animation: progress3 2s forwards;
+}
+
+@keyframes progress3 {
+    from { stroke-dashoffset: 377.0; } 
+    to { stroke-dashoffset: 150.8; } 
+}
+
+.circle4 .c2{
+    stroke: #28a745;
+    stroke-dasharray: 377.0; 
+    animation: progress3 2s forwards;
+}
+
+@keyframes progress4 {
+    from { stroke-dashoffset: 377.0; } 
+    to { stroke-dashoffset: 150.8; } 
+}
+
+.small-title{ 
+    padding: 0px 15px;
+    display: table;
+    width: calc(100% - 350px); 
+    border-collapse: separate;
+    box-sizing: border-box;
+    margin: 0 175px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid black;
+}
+
+.main-content{
+    border-radius: 20px; 
+    background-color: #FFFFFF; 
+    padding: 20px;
+    display: table;
+    margin: 0 175px;
+    margin-bottom: 30px;
+    width: calc(100% - 350px);
+    position: relative;
+    margin-bottom: 70px;
+}
+
+aside.main-size{
+    display: table-cell;
+    width: 40%; 
+    vertical-align: middle;
+    
+    text-align: center;
+}
+
+.photo1, .photo2, .photo3, .photo4, .photo5{
+    width: 300px; 
+    height: 300px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto; 
+}
+
+.main-introduction{
+    display: table-cell;
+    width: 60%; 
+    border-collapse: separate;
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 70px;
+}
+
+.bottom-link {
+    position: absolute;
+    bottom: 5px; 
+    right: 5px;
+    z-index: 10;
+    background-color: #007B8A; 
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.bottom-link:hover {
+    background-color: #39A7C1; 
+}
+
+.video {
+    width: 300px; 
+    height: 300px;
+    object-fit: cover;    
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+nav{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 9999; 
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px; 
+    margin: 0;
+    padding: 7px 50px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    line-height: 1;
+}
+
+nav a{
+    background-color: #FFFFFF;
+    color: #007B8A;
+    text-decoration: none;
+    padding: 10px 20px;
+    vertical-align: top;
+    border-radius: 50px;
+    border: 2px solid #D3D3D3;
+    display: inline-block;
+
+}
+
+nav a:hover {
+    background-color: #007B8A;
+    color: #FFFFFF;
+}
+
+.back-to-top{
+    background-color: #007B8A;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 40px;
+    border: 5px solid #FFFFFF;
+    text-align: center;
+    display: block;
+    margin: 20px 500px 10px 500px;
+}
+
+.back-to-top:hover {
+    background-color: #FFFFFF; 
+    color: #007B8A; 
+}
+
+footer{
+    background-color: #E9ECEF;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    width: 100%; 
+    margin: 0; 
+    border: none; 
+    border-radius: 0; 
+}
+
+footer p{
+    font-size: 15px;
+}
+
+.photo-introduction, .slogan, .skills, .main-content {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+}
+
+.photo-introduction:hover, .slogan:hover, .skills:hover, .main-content:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+}
